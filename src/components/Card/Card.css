@@ -1,0 +1,28 @@
+.day_card {
+  height:10rem;
+  width:7rem;
+  padding-top:3rem;
+}
+.day_card:hover {
+  background-color: rgb(241, 241, 241);
+  border: solid 1px #aaa;
+}
+.day {
+  font-family: sans-serif;
+  font-size:0.8rem;
+  color: rgb(59, 58, 58);
+}
+
+.icon {
+  margin-top:5px;
+  font-size:3rem;
+}
+
+.temps {
+  margin-top:5px;
+  font-size:0.8rem;
+}
+
+.min_temp {
+  color: rgb(94, 93, 93);
+}
