@@ -3,8 +3,18 @@
   width:7rem;
   padding-top:3rem;
   display:inline-block;
+  text-decoration: none;
 }
 .day_card:hover {
+  background-color: rgb(241, 241, 241);
+  border: solid 1px #aaa;
+}
+.selected_day {
+  text-decoration: none;
+  height:10rem;
+  width:7rem;
+  padding-top:3rem;
+  display:inline-block;
   background-color: rgb(241, 241, 241);
   border: solid 1px #aaa;
 }
@@ -12,16 +22,20 @@
   font-family: sans-serif;
   font-size:0.8rem;
   color: rgb(59, 58, 58);
+  height:2rem;
 }
 
 .icon {
   margin-top:5px;
   font-size:3rem;
+  height:4rem;
 }
 
 .temps {
   margin-top:5px;
   font-size:0.8rem;
+  color:#000;
+  height:2rem;
 }
 
 .min_temp {
