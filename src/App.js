@@ -13,43 +13,36 @@ import {
 
 let weather_report = [
       {
-      selected: false,
       day: 'Sunday',
       weather: 'Sunny',
       max_temp: 21,
       min_temp: 11},
       {
-      selected: false,
       day: 'Monday',
       weather: 'Cloudy',
       max_temp: 20,
       min_temp: 12},
       {
-      selected: false,
       day: 'Tuesday',
       weather: 'Rainy',
       max_temp: 19,
       min_temp: 13},
       {
-      selected: false,
       day: 'Wednesday',
       weather: 'Rainy',
       max_temp: 22,
       min_temp: 7},
       {
-      selected: false,
       day: 'Thursday',
       weather: 'Cloudy',
       max_temp: 25,
       min_temp: 12},
       {
-      selected: false,
       day: 'Friday',
       weather: 'Sunny',
       max_temp: 22,
       min_temp: 9},
       {
-      selected: false,
       day: 'Saturday',
       weather: 'Sunny',
       max_temp: 15,
