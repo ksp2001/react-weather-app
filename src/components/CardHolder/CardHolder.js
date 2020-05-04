@@ -6,17 +6,18 @@ import {
 } from "react-router-dom";
 
 const createTable = (props) => {
+      console.log(JSON.stringify(props));
       let days = []
-      //Inner loop to create children
-
-      for (let i = 0; i<props.weather_report.length; i++) {
+      for (let i = 0; i<7; i++) {
         let link = "/"+i;
-        days.push(<NavLink to={link} key={i} activeClassName='selected_day' className='day_card'><Card weather_report={props.weather_report[i]} id = {i}/></NavLink>);
+        if (props.weather_report.length !== 0) {
+        days.push(<NavLink to={link} key={i} activeClassName='selected_day' className='day_card'><Card weather_report={props.weather_report[i]} id = {i}/></NavLink>);}
       }
     return days;
-  }
+}
 
-const CardHolder = (props) => {
+function CardHolder(props) {
+  console.log(props);
   return (
     <section className='weather_inline'>
       {createTable(props)}

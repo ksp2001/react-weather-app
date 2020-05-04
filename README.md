@@ -1,10 +1,10 @@
 # REACT WEATHER APP
 
-Creating a weather app that shows uses components to show weather of next five days, and weather of each day when clicked using React Router.
+Creating a weather app that shows uses components to show weather of seven days of the week, and a little message about the weather of each day when clicked.
 
 ## Getting started 🎬
 
-Clone this repository. `npm start` should start the project.
+Clone this repository. Run `npm install` to install all dependencies, and then `npm start` should get the project up and running.
 
 ### Prerequisites 🧺
 
@@ -13,6 +13,8 @@ None at the moment.
 ## Built With 🔨
 
 * [React](https://reactjs.org/) - Used to create frontend.
+* [React Router](https://reacttraining.com/react-router/web/guides/quick-start) — Used to route each day to corresponding message.
+* [Weatherbit API](https://www.weatherbit.io/api/weather-forecast-16-day) — To get weather information of 7 days.
 
 ## Author 📚
 

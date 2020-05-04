@@ -1,0 +1,14 @@
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size:3rem;
+  font-weight:800;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size:1rem;
+}
+
+.headers {
+  padding-left:28%;
+  margin-top:10%;
+}
