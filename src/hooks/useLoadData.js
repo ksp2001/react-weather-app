@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 
 export const useLoadData = () => {
-  let weather_array = [];
   const [weather, setWeather] = useState([]);
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -20,11 +19,8 @@ export const useLoadData = () => {
         smth.weather = Math.floor(data.data[i].weather.code / 100) * 100;
         smth.min_temp = data.data[i].min_temp;
         smth.max_temp = data.data[i].max_temp;
-        weather_array.push(smth);
-        console.log("weather array",weather_array);
         setWeather(weather => [...weather,smth]);
       }
-        console.log(weather);
       })
       .catch(err => {
         setError(err);

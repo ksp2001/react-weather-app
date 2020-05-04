@@ -1,54 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './App.css';
 import CardHolder from './components/CardHolder';
 import BottomInfo from './components/BottomInfo';
 import Title from './components/Title';
 import { useLoadData } from './hooks/useLoadData';
-import axios from 'axios';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 
-
-// let weather = [
-//       {
-//       day: 'Sunday',
-//       weather: 'Sunny',
-//       max_temp: 21,
-//       min_temp: 11},
-//       {
-//       day: 'Monday',
-//       weather: 'Cloudy',
-//       max_temp: 20,
-//       min_temp: 12},
-//       {
-//       day: 'Tuesday',
-//       weather: 'Rainy',
-//       max_temp: 19,
-//       min_temp: 13},
-//       {
-//       day: 'Wednesday',
-//       weather: 'Rainy',
-//       max_temp: 22,
-//       min_temp: 7},
-//       {
-//       day: 'Thursday',
-//       weather: 'Cloudy',
-//       max_temp: 25,
-//       min_temp: 12},
-//       {
-//       day: 'Friday',
-//       weather: 'Sunny',
-//       max_temp: 22,
-//       min_temp: 9},
-//       {
-//       day: 'Saturday',
-//       weather: 'Sunny',
-//       max_temp: 15,
-//       min_temp: 4}
-//     ];
 
 function App() {
 
