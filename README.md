@@ -14,6 +14,7 @@ None at the moment.
 
 * [React](https://reactjs.org/) - Used to create frontend.
 * [React Router](https://reacttraining.com/react-router/web/guides/quick-start) — Used to route each day to corresponding message.
+* [Weatherbit API](https://www.weatherbit.io/api/weather-forecast-16-day) — To get weather information of 7 days.
 
 ## Author 📚
 
