@@ -3,16 +3,25 @@ import './Card.css'
 
 const Card = (props) => {
   let icon;
-  if (props.weather_report.weather.toLowerCase() === 'sunny') {
-    icon = '🌞';
+  if (props.weather_report.weather === 200) {
+    icon = '⛈';
   }
-  else if (props.weather_report.weather.toLowerCase() === 'cloudy') {
-    icon = '⛅️';
-  }
-  else {
+  else if (props.weather_report.weather === 300) {
     icon = '🌧';
   }
-  //let classes = `day_card ${'a'+ props.id}`
+  else if (props.weather_report.weather === 500) {
+    icon = '🌦'
+  }
+  else if (props.weather_report.weather === 600) {
+    icon = '🌨'
+  }
+  else if (props.weather_report.weather === 800) {
+    icon = '🌞'
+  }
+  else {
+    icon = '⛅️';
+  }
+  console.log(props);
   return (
     <section id={'a'+props.id.toString()}>
      <section className = 'day'><i>{props.weather_report.day}</i></section>
