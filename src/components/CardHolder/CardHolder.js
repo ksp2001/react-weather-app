@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 const createTable = (props) => {
-      console.log(JSON.stringify(props));
       let days = []
       for (let i = 0; i<7; i++) {
         let link = "/"+i;
@@ -17,7 +16,6 @@ const createTable = (props) => {
 }
 
 function CardHolder(props) {
-  console.log(props);
   return (
     <section className='weather_inline'>
       {createTable(props)}

@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
-
+//import config from '../config'
+const api_key = require('../config/keys').API_KEY;
 
 
 export const useLoadData = () => {
   const [weather, setWeather] = useState([]);
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   useEffect(() => {
     setLoading(true)
     setError(null)
-    fetch('https://api.weatherbit.io/v2.0/forecast/daily?&city=Ottawa&country=Canada&days=7&key=09ddb1ad8a9248ca88719c9f0b6b3ac6')
+    fetch('https://api.weatherbit.io/v2.0/forecast/daily?&city=Ottawa&country=Canada&days=7&key='+api_key)
     .then(res => res.json())
     .then(data => {
       setLoading(false);

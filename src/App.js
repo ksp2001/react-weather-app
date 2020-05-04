@@ -22,7 +22,6 @@ function App() {
     return(<div>Loading!</div>);
   }
   else {
-    console.log(weather.length);
     return (
     <div>
       <Title/>

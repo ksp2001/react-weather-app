@@ -21,7 +21,6 @@ const Card = (props) => {
   else {
     icon = '⛅️';
   }
-  console.log(props);
   return (
     <section id={'a'+props.id.toString()}>
      <section className = 'day'><i>{props.weather_report.day}</i></section>
